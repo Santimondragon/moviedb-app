@@ -3,8 +3,9 @@
 import React from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import Home from '../Home/Home';
-import Login from '../Login/Login';
-import Register from '../Register/Register';
+import Topbar from '../../components/Topbar/Topbar';
+import Favorites from '../../components/Favorites/Favorites';
+import Movies from '../../components/Movies/Movies';
 import Navbar from './../../components/Navbar/Navbar';
 import './App.scss';
 
@@ -14,16 +15,22 @@ function App() {
       <Navbar/>
 
       <Switch>
-        <Route path='/'>
+        <Route exact path='/'>
           <Home/>
         </Route>
 
-        <Route exact path='/login'>
-          <Login/>
+        <Route exact path='/favorites'>
+          <Topbar/>
+          <Favorites/>
         </Route>
 
-        <Route exact path='/register'>
-          <Register/>
+        <Route exact path='/movies'>
+          <Topbar/>
+          <Movies/>
+        </Route>
+
+        <Route exact path='/lists'>
+          <Topbar/>
         </Route>
 
       </Switch>
