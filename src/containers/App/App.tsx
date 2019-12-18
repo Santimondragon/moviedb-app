@@ -12,21 +12,17 @@ function App() {
   return (
     <section id="app">
       <Navbar/>
-      
-      <Link to="/">Home</Link>
-      <Link to="/login">Login</Link>
-      <Link to="/register">Register</Link>
 
       <Switch>
-        <Route exact path='/'>
+        <Route path='/'>
           <Home/>
         </Route>
 
-        <Route path='/login'>
+        <Route exact path='/login'>
           <Login/>
         </Route>
 
-        <Route path='/register'>
+        <Route exact path='/register'>
           <Register/>
         </Route>
 

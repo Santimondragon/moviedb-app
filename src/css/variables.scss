@@ -24,7 +24,7 @@ $navbarWidth: 230px;
   font-family: 'Fira Sans', sans-serif;
   list-style: none;
   scroll-behavior: smooth;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
 
   &::-webkit-scrollbar-track {
     background-color: none;
@@ -37,13 +37,12 @@ $navbarWidth: 230px;
 
   &::-webkit-scrollbar-thumb:vertical {
     background-color: $yellow;
-    border-radius: 5px;
   }
 
   &::selection {
     background: $yellow;
     opacity: 1;
-    color: $darkGray;
+    color: $black;
   }
 }
 
@@ -68,6 +67,10 @@ p,
 span,
 li {
   font-size: 13px;
+}
+
+button {
+  background: none;
 }
 
 body {
