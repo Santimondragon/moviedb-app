@@ -1,0 +1,58 @@
+@import '../../css/variables.scss';
+
+#navbar {
+    height: 100vh;
+    width: $navbarWidth;
+    background: $darkGray;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    // Flex Box
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    .profile {
+        width: 100%;
+        flex: 0 1 30%;
+        min-height: 235px;
+        padding: 30px 20px;
+
+        // Flex Box
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+
+        .picture {
+            width: 65px;
+            height: 65px;
+            border-radius: 60px;
+            margin-bottom: 15px;
+        }
+
+        .name {
+            font-weight: 400;
+            font-size: 15px;
+            color: $white;
+            margin-bottom: 5px;
+        }
+
+        .nickname {
+            font-weight: 300;
+            font-size: 10px;
+            margin-bottom: 15px;
+        }
+
+        .status {
+            background: $yellow;
+            padding: 10px 35px;
+            color: $white;
+            font-weight: 500;
+            font-size: 13px;
+        }
+
+    }
+}
